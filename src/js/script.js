@@ -1,5 +1,5 @@
 const factURL = "https://catfact.ninja/fact";
-const imgURL = "https://api.thecatapi.com/v1/images/0XYvRd7oD";
+const imgURL = "https://api.thecatapi.com/v1/images/search";
 
 const generateBtn = document.querySelector("button");
 const imgDiv = document.querySelector(".imgDiv");
@@ -20,7 +20,7 @@ function generate(){
             return res.json();
         })
         .then(data => {
-            imgDiv.src = data.url;
+            imgDiv.src = data[0].url;
         })
         .catch(err =>{
             console.error("Error -",err);
