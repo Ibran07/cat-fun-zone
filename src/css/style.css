@@ -1,0 +1,121 @@
+/*------- Root Color ----------*/
+:root {
+  --background: #F5EDE3;
+  --card-bg: #FFFFFF;
+  --text-dark: #333333;
+  --heading: #2F2F2F;
+  --btn-bg: #6B4F3F;
+  --btn-text: #FFFFFF;
+  --accent: #C8B299;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url(../images/Cat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(245, 237, 227, 0.7);
+    z-index: -1;
+}
+main {
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+}
+.logo-img img{
+    width: 2.5rem;
+}
+
+/* Result container */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 75%;
+    position: relative;
+}
+.box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.cat-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.cat-fact {
+    background-color: var(--card-bg);
+    padding: 1.5em;
+}
+.fact-heading {
+    margin-bottom: 0.8em;
+}
+.fact-container {
+    line-height: 1.6;
+    word-spacing: 8px;
+    letter-spacing: 0.5px;
+}
+.paw {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--btn-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.paw i {
+    color: var(--btn-text);
+    font-size: 2rem;
+    padding: 0.3em;
+    width: 100%;
+}
+
+button {
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
+    padding: 1em 2.5em;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--accent);
+    color: var(--text-dark);
+    font-weight: 600;
+    transform: scale(1.05);
+}
+.btn-container {
+    margin: 1.8em 0;
+}
