@@ -6,7 +6,7 @@ It’s a beginner-friendly project built with **HTML, CSS, and JavaScript**.
 ---
 
 ## 🚀 Live Demo  
-👉 [View Project]([https://your-live-link.com](https://ibran07.github.io/cat-fun-zone/))
+👉 [View Project](https://ibran07.github.io/cat-fun-zone/)
 
 ---
 
